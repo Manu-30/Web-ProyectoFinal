@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.card img {
+    border: 4px solid white;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.7);
+}
