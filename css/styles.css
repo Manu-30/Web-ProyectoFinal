@@ -76,3 +76,54 @@ footer h2 {
     max-width: 100%; /* Para que no se rompa en responsive */
     height: auto;
 }
+
+
+.img-inicio{
+    max-width: 650px
+}
+
+.img-contactos{
+    max-width: 280px
+}
+
+@media (max-width: 1250px) {
+.img-contactos{
+    max-width: 200px
+}
+}
+
+@media (max-width: 750px) {
+
+.img-inicio{
+    max-width: 380px
+}
+
+.img-contactos{
+    max-width: 280px
+}
+
+}
+
+@media (max-width: 450px){
+
+.img-inicio{
+    max-width: 220px
+}
+
+.img-contactos{
+    max-width: 180px
+}
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+
+    footer h2 {
+    font-size: 1.4rem;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+}
