@@ -1,179 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>El Espacio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Espacio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
+<body>
 
-<body class="bg-black text-white">
-
-    <!-- HEADER -->
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
-    <div class="container-fluid px-3">
-
-      <!-- Logo a la izquierda -->
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="media/Sol.webp" alt="Logo" width="100">
+        <img src="media/LogoPage.webp" alt="Logo" class="logo-image" />
       </a>
-
-      <!-- Botón hamburguesa -->
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Menú -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
-
-        <!-- Menú escritorio (centrado) -->
-        <ul class="navbar-nav gap-3 d-none d-lg-flex">
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#estrellas">Estrellas</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#planetas">Planetas</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#satelites">Satélites</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#galaxia">Galaxias</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#fotodeldia">Foto del día</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#contactanos">Contacto</a></li>
+      <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item px-4"><a class="nav-link" href="#estrellas">Estrellas</a></li>
+          <li class="nav-item px-4"><a class="nav-link" href="#planetas">Planetas</a></li>
+          <li class="nav-item px-4"><a class="nav-link" href="#satelites">Satélites</a></li>
+          <li class="nav-item px-4"><a class="nav-link" href="#galaxias">Galaxias</a></li>
+          <li class="nav-item px-4"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
-
-        <!-- Menú responsive centrado -->
-        <ul class="navbar-nav gap-3 d-flex flex-column align-items-center text-center d-lg-none w-100 mt-4">
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#estrellas">Estrellas</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#planetas">Planetas</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#satelites">Satélites</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#galaxia">Galaxias</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#fotodeldia">Foto del día</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#contactanos">Contacto</a></li>
-        </ul>
-
       </div>
     </div>
   </nav>
-</header>
 
+  <!-- HERO -->
+  <header class="hero-section">
+    <img src="media/LogoEspacio.webp" alt="El Espacio" class="img-hero-title" />
+  </header>
 
+  <main>
 
-    <section id="inicio" class="text-center py-5">
-        <img src="media/Titulo_Espacio.webp" alt="El Espacio" class="img-inicio" >
+    <!-- ESTRELLAS -->
+    <section id="estrellas" class="seccion-oscura">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <img src="media/Sol.webp" alt="Estrella" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <h2>ESTRELLAS</h2>
+            <p>Las estrellas son enormes cuerpos celestes compuestos principalmente de hidrógeno y helio que emiten luz y calor debido a las reacciones nucleares que ocurren en sus núcleos. Estas reacciones, llamadas fusión nuclear, convierten hidrógeno en helio, liberando una gran cantidad de energía. Las estrellas pueden variar en tamaño, color y temperatura, y son los elementos fundamentales de las galaxias</p>
+            <a href="#" class="btn btn-custom">ENTER NOW</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- SECCIONES -->
-    <section class="container my-5">
-
-        <!-- Estrellas -->
-        <h2 class="text-center">Estrellas</h2>
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <img src="/media/Sol.webp" class="img-fluid rounded" alt="Sol">
-            </div>
-            <div class="col-md-6">
-                <p>Las estrellas son enormes cuerpos celestes compuestos principalmente de hidrógeno y helio que emiten luz y calor debido a las reacciones nucleares que ocurren en sus núcleos. Estas reacciones, llamadas fusión nuclear, convierten hidrógeno en helio, liberando una gran cantidad de energía. Las estrellas pueden variar en tamaño, color y temperatura, y son los elementos fundamentales de las galaxias</p>
-                <a href="x.html" class="btn btn-outline-light">ENTER NOW</a>
-            </div>
+    <!-- PLANETAS -->
+    <section id="planetas" class="seccion-clara">
+      <div class="container">
+        <div class="row align-items-center flex-md-row-reverse">
+          <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <img src="media/Tierra.webp" alt="Planeta" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <h2>PLANETAS</h2>
+            <p>Los planetas son cuerpos celestes que orbitan alrededor de una estrella, como el Sol, y no emiten luz propia. Tienen suficiente masa para tener una forma casi esférica y han limpiado su órbita de otros objetos. Se dividen en dos grupos: los rocosos (los mas cercanos a las estrellas), y los gaseosos (los más alejados). También existen planetas fuera de los sistemas, llamados exoplanetas.</p>
+            <a href="#" class="btn btn-custom">ENTER NOW</a>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Planetas-->
-        <h2 class="text-center">Planetas</h2>
-        <div class="row align-items-center mb-5 flex-md-row-reverse">
-            <div class="col-md-6">
-                <img src="/media/Tierra.webp" class="img-fluid rounded ms-md-5" alt="Tierra">
-            </div>
-            <div class="col-md-6">
-                <p>Los planetas son cuerpos celestes que orbitan alrededor de una estrella, como el Sol, y no emiten luz propia. Tienen suficiente masa para tener una forma casi esférica y han limpiado su órbita de otros objetos. Se dividen en dos grupos: los rocosos (los mas cercanos a las estrellas), y los gaseosos (los más alejados). También existen planetas fuera de los sistemas, llamados exoplanetas.</p>
-                <a href="x.html" class="btn btn-outline-light">ENTER NOW</a>
-            </div>
+
+    <!-- SATÉLITES -->
+    <section id="satelites" class="seccion-oscura">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <img src="media/Luna.webp" alt="Satélite" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <h2>SATÉLITES</h2>
+            <p>Los satélites naturales son cuerpos celestes que orbitan alrededor de un planeta de forma natural, sin intervención humana. Están formados por roca, hielo o una combinación de ambos. El ejemplo más conocido es la Luna, satélite natural de la Tierra. Otros planetas, como Júpiter o Saturno, tienen decenas de satélites naturales, algunos incluso más grandes que planetas pequeños. Estos satélites pueden influir en fenómenos como las mareas y ayudan a los científicos a entender mejor la formación y evolución del sistema solar.
+            </p>
+            <a href="#" class="btn btn-custom">ENTER NOW</a>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Satélites  -->
-        <h2 class="text-center">Satélites</h2>
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <img src="/media/Luna.webp" class="img-fluid rounded" alt="Luna">
-            </div>
-            <div class="col-md-6">
-                <p>Los satélites naturales son cuerpos celestes que orbitan alrededor de un planeta de forma natural, sin intervención humana. Están formados por roca, hielo o una combinación de ambos. El ejemplo más conocido es la Luna, satélite natural de la Tierra. Otros planetas, como Júpiter o Saturno, tienen decenas de satélites naturales, algunos incluso más grandes que planetas pequeños. Estos satélites pueden influir en fenómenos como las mareas y ayudan a los científicos a entender mejor la formación y evolución del sistema solar.</p>
-                <a href="x.html" class="btn btn-outline-light">ENTER NOW</a>
-            </div>
+    <!-- GALAXIAS -->
+    <section id="galaxias" class="seccion-clara">
+      <div class="container">
+        <div class="row align-items-center flex-md-row-reverse">
+          <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <img src="media/Galaxia.webp" alt="Galaxia" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <h2>GALAXIAS</h2>
+            <p>Las galaxias son enormes conjuntos de estrellas, planetas, gas, polvo y materia oscura unidos por la gravedad. Existen miles de millones de galaxias en el universo, y cada una puede contener desde millones hasta billones de estrellas. Se presentan en diferentes formas: espirales (como la Vía Láctea, donde se encuentra nuestro sistema solar), elípticas e irregulares. Las galaxias pueden agruparse en cúmulos y supercúmulos, y evolucionan a lo largo de miles de millones de años mediante fusiones y colisiones con otras galaxias.</p>
+            <a href="#" class="btn btn-custom">ENTER NOW</a>
+          </div>
         </div>
-
-        <!-- Galaxias -->
-        <h2 class="text-center">Galaxias</h2>
-        <div class="row align-items-center mb-5 flex-md-row-reverse">
-            <div class="col-md-6">
-                <img src="/media/Galaxia.webp" class="img-fluid rounded ms-md-5" alt="Galaxia">
-            </div>
-            <div class="col-md-6">
-                <p>Las galaxias son enormes conjuntos de estrellas, planetas, gas, polvo y materia oscura unidos por la gravedad. Existen miles de millones de galaxias en el universo, y cada una puede contener desde millones hasta billones de estrellas. Se presentan en diferentes formas: espirales (como la Vía Láctea, donde se encuentra nuestro sistema solar), elípticas e irregulares. Las galaxias pueden agruparse en cúmulos y supercúmulos, y evolucionan a lo largo de miles de millones de años mediante fusiones y colisiones con otras galaxias.</p>
-                <a href="x.html" class="btn btn-outline-light">ENTER NOW</a>
-            </div>
-        </div>
-        
-        <!-- Foto del Día -->
-        <h2 class="text-center">Foto del Día</h2>
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <img src="/media/Galaxia.webp" class="img-fluid rounded" alt="Foto del día">
-            </div>
-            <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla justo nec felis accumsan, at malesuada justo feugiat. Nullam eu facilisis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <a href="foto-del-dia.html" class="btn btn-outline-light">ENTER NOW</a>
-            </div>
-        </div>
-
-
+      </div>
     </section>
 
     <!-- CONTACTO -->
-<footer class="container-fluid bg-black py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">CONTACTANOS</h2>
-    <div class="row align-items-center">
-      
-      <!-- Imagen Contacto -->
-      <div class="col-lg-3 text-center mb-4 mb-lg-0">
-        <img src="/media/Contacto.webp" alt="Contáctanos" class="img-contactos">
+    <section id="contacto" class="seccion-oscura">
+      <div class="container">
+        <h2 class="titulo-contacto">CONTÁCTANOS</h2>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="media/Contacto.webp" alt="Contáctanos" class="img-fluid" />
+          </div>
+          <div class="col-md-4">
+            <p><strong>Escríbenos:</strong> estrellitadondest@gmail.com</p>
+            <p><strong>Llámamos:</strong> +56 903 454 364</p>
+            <p><strong>Encuéntranos:</strong> En una galaxia muy muy lejana</p>
+          </div>
+          <div class="col-md-4">
+            <form class="form-contacto">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" class="form-control" placeholder="">
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" class="form-control" placeholder="">
+              <label for="email">Email:</label>
+              <input type="email" id="email" class="form-control" placeholder="">
+              <label for="comentario">Comentario:</label>
+              <textarea id="comentario" rows="3" class="form-control" placeholder=""></textarea>
+              <button type="submit" class="btn btn-form">Enviar</button>
+            </form>
+          </div>
+        </div>
       </div>
+    </section>
+  </main>
 
-      <!-- Información de contacto -->
-      <div class="col-lg-3 contact-info text-center text-lg-start mb-4 mb-lg-0">
-        <p><strong>Escríbenos</strong><br> estrellitadondestas@gmail.com</p>
-        <p><strong>Llámamos</strong><br> +34 XXX 44X X44</p>
-        <p><strong>Encuéntranos aquí</strong><br> En una galaxia muy muy lejana</p>
-      </div>
 
-      <!-- Formulario -->
-      <div class="col-lg-6 contact-form">
-        <form>
-          <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" id="nombre">
-          </div>
-          <div class="mb-3">
-            <label for="apellido" class="form-label">Apellido:</label>
-            <input type="text" class="form-control" id="apellido">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-          <div class="mb-3">
-            <label for="comentario" class="form-label">Comentario:</label>
-            <textarea class="form-control" id="comentario" rows="2"></textarea>
-          </div>
-          <button type="submit" class="btn btn-light">Enviar</button>
-        </form>
-      </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <small>POLÍTICA DE PRIVACIDAD | 2025 ESTRELLA DONDE ESTÁS | TÉRMINOS DE USO</small>
     </div>
-  </div>
-</footer>
+  </footer>
 
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
