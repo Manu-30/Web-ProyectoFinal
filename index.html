@@ -31,29 +31,33 @@
 
         <!-- Menú escritorio (centrado) -->
         <ul class="navbar-nav gap-3 d-none d-lg-flex">
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#estrellas">Estrellas</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#planetas">Planetas</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#satelites">Satélites</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#galaxia">Galaxias</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#fotodeldia">Foto del día</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#contactanos">Contacto</a></li>
+          <li id="inicio-txt" class="nav-item"><a class="nav-link text-uppercase" href="#inicio">Inicio</a></li>
+          <li id="estrellas-txt" class="nav-item"><a class="nav-link text-uppercase" href="#estrellas">Estrellas</a></li>
+          <li id="planetas-txt" class="nav-item"><a class="nav-link text-uppercase" href="#planetas">Planetas</a></li>
+          <li id="satelites-txt" class="nav-item"><a class="nav-link text-uppercase" href="#satelites">Satélites</a></li>
+          <li id="galaxias-txt" class="nav-item"><a class="nav-link text-uppercase" href="#galaxia">Galaxias</a></li>
+          <li id="foto-del-dia-txt" class="nav-item"><a class="nav-link text-uppercase" href="#fotodeldia">Foto del día</a></li>
+          <li id="contacto-txt" class="nav-item"><a class="nav-link text-uppercase" href="#contactanos">Contacto</a></li>
         </ul>
 
         <!-- Menú responsive centrado -->
         <ul class="navbar-nav gap-3 d-flex flex-column align-items-center text-center d-lg-none w-100 mt-4">
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#estrellas">Estrellas</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#planetas">Planetas</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#satelites">Satélites</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#galaxia">Galaxias</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#fotodeldia">Foto del día</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="#contactanos">Contacto</a></li>
+          <li id="inicio-txt" class="nav-item"><a class="nav-link text-uppercase" href="#inicio">Inicio</a></li>
+          <li id="estrellas-txt" class="nav-item"><a class="nav-link text-uppercase" href="#estrellas">Estrellas</a></li>
+          <li id="planetas-txt" class="nav-item"><a class="nav-link text-uppercase" href="#planetas">Planetas</a></li>
+          <li id="satelites-txt" class="nav-item"><a class="nav-link text-uppercase" href="#satelites">Satélites</a></li>
+          <li id="galaxias-txt" class="nav-item"><a class="nav-link text-uppercase" href="#galaxia">Galaxias</a></li>
+          <li id="foto-del-dia-txt" class="nav-item"><a class="nav-link text-uppercase" href="#fotodeldia">Foto del día</a></li>
+          <li id="contacto-txt" class="nav-item"><a class="nav-link text-uppercase" href="#contactanos">Contacto</a></li>
         </ul>
 
       </div>
     </div>
   </nav>
+
+  <!-- Botón de cambio de idioma en la esquina superior derecha -->
+       <button class="lang-toggle" onclick="cambiarIdioma(event)">EN</button>
+
 </header>
 
 
@@ -66,60 +70,60 @@
     <section class="container my-5">
 
         <!-- Estrellas -->
-        <h2 class="text-center">Estrellas</h2>
+        <h2 id="estrellas-txt" class="text-center">Estrellas</h2>
         <div class="row align-items-center mb-5">
             <div class="col-md-6">
                 <img src="/media/Sol.webp" class="img-fluid rounded" alt="Sol">
             </div>
-            <div class="col-md-6">
+            <div id="info-estrellas-txt" class="col-md-6">
                 <p>Las estrellas son enormes cuerpos celestes compuestos principalmente de hidrógeno y helio que emiten luz y calor debido a las reacciones nucleares que ocurren en sus núcleos. Estas reacciones, llamadas fusión nuclear, convierten hidrógeno en helio, liberando una gran cantidad de energía. Las estrellas pueden variar en tamaño, color y temperatura, y son los elementos fundamentales de las galaxias</p>
                 <a href="x.html" class="btn btn-outline-light">ENTER NOW</a>
             </div>
         </div>
 
         <!-- Planetas-->
-        <h2 class="text-center">Planetas</h2>
+        <h2 id="planetas-txt" class="text-center">Planetas</h2>
         <div class="row align-items-center mb-5 flex-md-row-reverse">
             <div class="col-md-6">
                 <img src="/media/Tierra.webp" class="img-fluid rounded ms-md-5" alt="Tierra">
             </div>
-            <div class="col-md-6">
+            <div id="info-planetas-txt" class="col-md-6">
                 <p>Los planetas son cuerpos celestes que orbitan alrededor de una estrella, como el Sol, y no emiten luz propia. Tienen suficiente masa para tener una forma casi esférica y han limpiado su órbita de otros objetos. Se dividen en dos grupos: los rocosos (los mas cercanos a las estrellas), y los gaseosos (los más alejados). También existen planetas fuera de los sistemas, llamados exoplanetas.</p>
                 <a href="x.html" class="btn btn-outline-light">ENTER NOW</a>
             </div>
         </div>
 
         <!-- Satélites  -->
-        <h2 class="text-center">Satélites</h2>
+        <h2 id="satelites-txt" class="text-center">Satélites</h2>
         <div class="row align-items-center mb-5">
             <div class="col-md-6">
                 <img src="/media/Luna.webp" class="img-fluid rounded" alt="Luna">
             </div>
-            <div class="col-md-6">
+            <div id="info-satelites-txt" class="col-md-6">
                 <p>Los satélites naturales son cuerpos celestes que orbitan alrededor de un planeta de forma natural, sin intervención humana. Están formados por roca, hielo o una combinación de ambos. El ejemplo más conocido es la Luna, satélite natural de la Tierra. Otros planetas, como Júpiter o Saturno, tienen decenas de satélites naturales, algunos incluso más grandes que planetas pequeños. Estos satélites pueden influir en fenómenos como las mareas y ayudan a los científicos a entender mejor la formación y evolución del sistema solar.</p>
                 <a href="x.html" class="btn btn-outline-light">ENTER NOW</a>
             </div>
         </div>
 
         <!-- Galaxias -->
-        <h2 class="text-center">Galaxias</h2>
+        <h2 id="galexias-txt" class="text-center">Galaxias</h2>
         <div class="row align-items-center mb-5 flex-md-row-reverse">
             <div class="col-md-6">
                 <img src="/media/Galaxia.webp" class="img-fluid rounded ms-md-5" alt="Galaxia">
             </div>
-            <div class="col-md-6">
+            <div id="info-galaxias-txt" class="col-md-6">
                 <p>Las galaxias son enormes conjuntos de estrellas, planetas, gas, polvo y materia oscura unidos por la gravedad. Existen miles de millones de galaxias en el universo, y cada una puede contener desde millones hasta billones de estrellas. Se presentan en diferentes formas: espirales (como la Vía Láctea, donde se encuentra nuestro sistema solar), elípticas e irregulares. Las galaxias pueden agruparse en cúmulos y supercúmulos, y evolucionan a lo largo de miles de millones de años mediante fusiones y colisiones con otras galaxias.</p>
                 <a href="x.html" class="btn btn-outline-light">ENTER NOW</a>
             </div>
         </div>
         
         <!-- Foto del Día -->
-        <h2 class="text-center">Foto del Día</h2>
+        <h2 id="foto-del-dia-txt" class="text-center">Foto del Día</h2>
         <div class="row align-items-center mb-5">
             <div class="col-md-6">
                 <img src="/media/Galaxia.webp" class="img-fluid rounded" alt="Foto del día">
             </div>
-            <div class="col-md-6">
+            <div id="info-foto-del-dia-txt" class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla justo nec felis accumsan, at malesuada justo feugiat. Nullam eu facilisis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                 <a href="foto-del-dia.html" class="btn btn-outline-light">ENTER NOW</a>
             </div>
@@ -131,7 +135,7 @@
     <!-- CONTACTO -->
 <footer class="container-fluid bg-black py-5">
   <div class="container">
-    <h2 class="text-center mb-5">CONTACTANOS</h2>
+    <h2 id="contactanos-txt" class="text-center mb-5">CONTACTANOS</h2>
     <div class="row align-items-center">
       
       <!-- Imagen Contacto -->
@@ -141,31 +145,31 @@
 
       <!-- Información de contacto -->
       <div class="col-lg-3 contact-info text-center text-lg-start mb-4 mb-lg-0">
-        <p><strong>Escríbenos</strong><br> estrellitadondestas@gmail.com</p>
-        <p><strong>Llámamos</strong><br> +34 XXX 44X X44</p>
-        <p><strong>Encuéntranos aquí</strong><br> En una galaxia muy muy lejana</p>
+        <p id="escribenos-txt"><strong>Escríbenos</strong><br> estrellitadondestas@gmail.com</p>
+        <p id="llamanos-txt"><strong>Llámamos</strong><br> +34 XXX 44X X44</p>
+        <p id="encuentranos-aqui-txt"><strong>Encuéntranos aquí</strong><br> En una galaxia muy muy lejana</p>
       </div>
 
       <!-- Formulario -->
       <div class="col-lg-6 contact-form">
         <form>
           <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre:</label>
+            <label for="nombre" id="nombre-txt" class="form-label">Nombre:</label>
             <input type="text" class="form-control" id="nombre">
           </div>
           <div class="mb-3">
-            <label for="apellido" class="form-label">Apellido:</label>
+            <label for="apellido" id="apellidos-txt" class="form-label">Apellido:</label>
             <input type="text" class="form-control" id="apellido">
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email:</label>
+            <label for="email" id="email-txt" class="form-label">Email:</label>
             <input type="email" class="form-control" id="email">
           </div>
           <div class="mb-3">
-            <label for="comentario" class="form-label">Comentario:</label>
+            <label for="comentario" id="comentario-txt" class="form-label">Comentario:</label>
             <textarea class="form-control" id="comentario" rows="2"></textarea>
           </div>
-          <button type="submit" class="btn btn-light">Enviar</button>
+          <button type="submit" id="enviar-txt" class="btn btn-light">Enviar</button>
         </form>
       </div>
     </div>
