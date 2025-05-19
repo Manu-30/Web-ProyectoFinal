@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>El Espacio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="media/LogoPage.webp" alt="Logo" class="logo-image" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -31,47 +31,58 @@
   </nav>
 
   <!-- HERO -->
-  <header class="hero-section">
-    <img src="media/LogoEspacio.webp" alt="El Espacio" class="img-hero-title" />
-  </header>
-
-  <main>
-
-    <!-- ESTRELLAS -->
-    <section id="estrellas" class="seccion-oscura">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 d-flex justify-content-center align-items-center">
-            <img src="media/Sol.webp" alt="Estrella" class="img-fluid" />
-          </div>
-          <div class="col-md-6">
-            <h2>ESTRELLAS</h2>
-            <p>Las estrellas son enormes cuerpos celestes compuestos principalmente de hidrógeno y helio que emiten luz y calor debido a las reacciones nucleares que ocurren en sus núcleos. Estas reacciones, llamadas fusión nuclear, convierten hidrógeno en helio, liberando una gran cantidad de energía. Las estrellas pueden variar en tamaño, color y temperatura, y son los elementos fundamentales de las galaxias</p>
-            <a href="#" class="btn btn-custom">ENTER NOW</a>
-          </div>
+<!-- HERO BIENVENIDA CON SISTEMA SOLAR -->
+<section class="hero-bienvenida d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center flex-column flex-md-row">
+      <div class="col-md-6 mb-5 mb-md-0">
+        <img src="media/LogoEspacio.webp" alt="El Espacio" class="img-fluid mb-4 logo-espacio" />
+        <h1 class="titulo-bienvenida">Bienvenidos al universo infinito</h1>
+        <p class="descripcion-bienvenida">
+          Explora las maravillas del cosmos en un solo lugar. Desde planetas lejanos y galaxias colosales hasta asteroides errantes y fenómenos estelares, aquí comienza tu viaje por el espacio.
+        </p>
+        <p class="descripcion-bienvenida">
+          Aprende, descubre y maravíllate con los secretos del universo, presentados de manera visual, educativa e inspiradora.
+          ¿Estás listo para mirar más allá de las estrellas?
+        </p>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="solar-system">
+          <div class="sun"></div>
+          <div class="orbit mercury-orbit"><div class="planet mercury"></div></div>
+          <div class="orbit venus-orbit"><div class="planet venus"></div></div>
+          <div class="orbit earth-orbit"><div class="planet earth"></div></div>
+          <div class="orbit mars-orbit"><div class="planet mars"></div></div>
+          <div class="orbit jupiter-orbit"><div class="planet jupiter"></div></div>
+          <div class="orbit saturn-orbit"><div class="planet saturn"></div></div>
+          <div class="orbit uranus-orbit"><div class="planet uranus"></div></div>
+          <div class="orbit neptune-orbit"><div class="planet neptune"></div></div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- PLANETAS -->
-    <section id="planetas" class="seccion-clara">
+
+  <main>
+        <!-- PLANETAS -->
+    <section id="planetas" class="seccion-oscura">
       <div class="container">
         <div class="row align-items-center flex-md-row-reverse">
           <div class="col-md-6 d-flex justify-content-center align-items-center">
-            <img src="media/Tierra.webp" alt="Planeta" class="img-fluid" />
+            <img src="media/earth.webp" alt="Planeta" class="img-fluid" />
           </div>
           <div class="col-md-6">
             <h2>PLANETAS</h2>
             <p>Los planetas son cuerpos celestes que orbitan alrededor de una estrella, como el Sol, y no emiten luz propia. Tienen suficiente masa para tener una forma casi esférica y han limpiado su órbita de otros objetos. Se dividen en dos grupos: los rocosos (los mas cercanos a las estrellas), y los gaseosos (los más alejados). También existen planetas fuera de los sistemas, llamados exoplanetas.</p>
-            <a href="#" class="btn btn-custom">ENTER NOW</a>
+            <a href="planetas.html" class="btn btn-custom">ENTER NOW</a>
           </div>
         </div>
       </div>
     </section>
 
-
     <!-- SATÉLITES -->
-    <section id="satelites" class="seccion-oscura">
+    <section id="satelites" class="seccion-clara">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -81,27 +92,45 @@
             <h2>SATÉLITES</h2>
             <p>Los satélites naturales son cuerpos celestes que orbitan alrededor de un planeta de forma natural, sin intervención humana. Están formados por roca, hielo o una combinación de ambos. El ejemplo más conocido es la Luna, satélite natural de la Tierra. Otros planetas, como Júpiter o Saturno, tienen decenas de satélites naturales, algunos incluso más grandes que planetas pequeños. Estos satélites pueden influir en fenómenos como las mareas y ayudan a los científicos a entender mejor la formación y evolución del sistema solar.
             </p>
-            <a href="#" class="btn btn-custom">ENTER NOW</a>
+            <a href="satelites.html" class="btn btn-custom">ENTER NOW</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- GALAXIAS -->
-    <section id="galaxias" class="seccion-clara">
+    <!-- PLANETAS ENANOS -->
+    <section id="galaxias" class="seccion-oscura">
       <div class="container">
         <div class="row align-items-center flex-md-row-reverse">
           <div class="col-md-6 d-flex justify-content-center align-items-center">
-            <img src="media/Galaxia.webp" alt="Galaxia" class="img-fluid" />
+            <img src="media/pluto.webp" alt="Galaxia" class="img-fluid" />
           </div>
           <div class="col-md-6">
-            <h2>GALAXIAS</h2>
-            <p>Las galaxias son enormes conjuntos de estrellas, planetas, gas, polvo y materia oscura unidos por la gravedad. Existen miles de millones de galaxias en el universo, y cada una puede contener desde millones hasta billones de estrellas. Se presentan en diferentes formas: espirales (como la Vía Láctea, donde se encuentra nuestro sistema solar), elípticas e irregulares. Las galaxias pueden agruparse en cúmulos y supercúmulos, y evolucionan a lo largo de miles de millones de años mediante fusiones y colisiones con otras galaxias.</p>
-            <a href="#" class="btn btn-custom">ENTER NOW</a>
+            <h2>PLANETAS ENANOS</h2>
+            <p>Los planetas enanos son cuerpos celestes que orbitan alrededor del Sol y poseen suficiente masa como para tener una forma casi esférica, pero no han limpiado su órbita de otros objetos. Plutón es el planeta enano más conocido, aunque existen otros como Eris, Haumea y Makemake. Estos cuerpos suelen encontrarse en las regiones más alejadas del sistema solar, como el cinturón de Kuiper. Su estudio proporciona pistas sobre la evolución y la dinámica del sistema solar exterior.</p>
+            <a href="planetasEnanos.html" class="btn btn-custom">ENTER NOW</a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ASTEROIDES -->
+    <section id="satelites" class="seccion-clara">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <img src="media/asteroide.webp" alt="Satélite" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <h2>ASTERIOIDES</h2>
+            <p>Los asteroides son cuerpos rocosos y metálicos que orbitan alrededor del Sol, principalmente en el cinturón de asteroides entre Marte y Júpiter. A diferencia de los planetas, los asteroides son mucho más pequeños y carecen de forma esférica debido a su baja gravedad. Están compuestos de materiales primitivos que datan de la formación del sistema solar, lo que los convierte en objetos de gran interés científico. Aunque la mayoría sigue órbitas estables, algunos pueden cruzar la trayectoria de la Tierra, siendo vigilados por su potencial impacto.
+            </p>
+            <a href="asteroides.html" class="btn btn-custom">ENTER NOW</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- CONTACTO -->
     <section id="contacto" class="seccion-oscura">
@@ -133,7 +162,6 @@
       </div>
     </section>
   </main>
-
 
   <!-- FOOTER -->
   <footer class="footer">

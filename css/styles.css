@@ -19,34 +19,18 @@
   color: #a24ecf;
 }
 
-@media (max-width: 990px) {
-  .navbar-nav {
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
 /* HERO */
-.hero-section {
-    background: url('/media/BP.webp') no-repeat center center;
-    background-size: cover;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .img-hero-title {
-    max-width: 45%;
-    height: auto;
+  max-width: 45%;
+  height: auto;
 }
 
 .logo-image {
-    width: 70px;
-    height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
-/* Separación entre título, párrafo y botón en secciones */
+/* SEPARACIÓN ENTRE TÍTULO, PÁRRAFO Y BOTÓN */
 .seccion-oscura h2,
 .seccion-clara h2 {
   margin-bottom: 2.5rem;
@@ -57,84 +41,222 @@
   margin-bottom: 2.5rem;
 }
 
-
 /* SECCIONES */
 .seccion-oscura {
-    background-color: #000;
-    color: white;
-    padding: 60px 0;
+  background-color: #000;
+  color: white;
+  padding: 60px 0;
 }
 
 .seccion-clara {
-    background-color: #041125;
-    color: white;
-    padding: 60px 0;
+  background-color: #041125;
+  color: white;
+  padding: 60px 0;
 }
 
 .titulo-contacto {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
-
 
 /* BOTONES CUSTOM */
 .btn-custom {
-    border: 2px solid #412c2c;
-    background-color: #775151;
-    color: #fff;
-    padding: 8px 20px;
-    font-weight: 500;
-    transition: all 0.3s ease;
+  border: 2px solid #412c2c;
+  background-color: #775151;
+  color: #fff;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .btn-custom:hover {
-    background-color: #ad7777;
+  background-color: #ad7777;
 }
 
 /* FORMULARIO */
 .form-contacto .form-control {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #a24ecf;
-    border-radius: 0;
-    color: white;
-    padding-left: 0;
-    padding-right: 0;
-    box-shadow: none;
-    margin-bottom: 1rem;
-    font-family: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #a24ecf;
+  border-radius: 0;
+  color: white;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: none;
+  margin-bottom: 1rem;
+  font-family: inherit;
 }
 
 .form-contacto label {
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
-    display: block;
-    font-weight: 500;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  display: block;
+  font-weight: 500;
 }
 
 .btn-form {
-    background-color: #a24ecf;
-    color: white;
-    border: none;
-    font-weight: bold;
-    padding: 8px 24px;
-    border-radius: 6px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+  background-color: #a24ecf;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 8px 24px;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-form:hover {
-    background-color: #8b3db5;
+  background-color: #8b3db5;
 }
 
 /* FOOTER */
 .footer {
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 0px;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 0px;
+}
+
+/* HERO BIENVENIDA */
+.hero-bienvenida {
+  background: url('/media/BP.webp') no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  overflow-x: hidden;
+}
+
+.hero-bienvenida .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-espacio {
+  max-width: 350px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.titulo-bienvenida {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.descripcion-bienvenida {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  max-width: 600px;
+}
+
+/* SISTEMA SOLAR */
+.solar-system {
+  position: relative;
+  width: 100%;
+}
+
+.sun {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, yellow, orange);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 15px yellow;
+}
+
+.orbit {
+  position: absolute;
+  border: 2px dashed rgba(255, 255, 255, 0.432);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin linear infinite;
+}
+
+.planet {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+}
+
+/* TAMAÑOS Y COLORES */
+.mercury-orbit { width: 150px; height: 150px; animation-duration: 4s; }
+.mercury { width: 9px; height: 9px; background: #aaa; }
+
+.venus-orbit { width: 170px; height: 170px; animation-duration: 7s; }
+.venus { width: 12px; height: 12px; background: #e5c97c; }
+
+.earth-orbit { width: 200px; height: 200px; animation-duration: 10s; }
+.earth { width: 12px; height: 12px; background: #4a90e2; }
+
+.mars-orbit { width: 230px; height: 230px; animation-duration: 15s; }
+.mars { width: 10px; height: 10px; background: #c1440e; }
+
+.jupiter-orbit { width: 270px; height: 270px; animation-duration: 20s; }
+.jupiter { width: 15px; height: 15px; background: #d2b48c; }
+
+.saturn-orbit { width: 310px; height: 310px; animation-duration: 25s; }
+.saturn { width: 13px; height: 13px; background: #deb887; }
+
+.uranus-orbit { width: 350px; height: 350px; animation-duration: 30s; }
+.uranus { width: 12px; height: 12px; background: #aeeeee; }
+
+.neptune-orbit { width: 390px; height: 390px; animation-duration: 35s; }
+.neptune { width: 12px; height: 12px; background: #4169e1; }
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 
+/* RESPONSIVE */
+@media (max-width: 991px) {
+
+  .solar-system {
+    height: 350px;
+    max-width: 300px;
+    margin-top: 40px;
+  }
+
+  .logo-espacio {
+    max-width: 180px;
+  }
+
+  .titulo-bienvenida {
+    font-size: 2rem;
+  }
+
+  .descripcion-bienvenida {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 400px) {
+   .solar-system {
+    transform: scale(0.7); /* escala suavemente */
+  }
+}
