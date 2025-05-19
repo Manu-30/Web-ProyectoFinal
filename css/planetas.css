@@ -1,0 +1,89 @@
+/* GENERALES */
+body {
+  background-color: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+.header-planetas {
+  background-color: #111;
+  padding: 1.5rem 0;
+}
+
+.logo-header {
+  max-height: 150px;
+}
+
+.volver-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.volver-link:hover {
+  text-decoration: underline;
+}
+
+/* INTRODUCCIÓN */
+.intro-planetas {
+  background-color: #000;
+}
+
+.intro-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.planeta-intro-img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* PLANETAS */
+.planet-img {
+  max-height: 400px;
+  object-fit: contain;
+}
+
+
+.planet-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #a24ecf;
+  margin-bottom: 1rem;
+}
+
+.planet-info p {
+  margin-bottom: 0.4rem;
+}
+
+/* SECCIONES DE PLANETAS */
+.planet-section-wrapper {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.planet-section {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.bg-dark-blue {
+  background-color: #0e2039;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+@media (max-width: 990px) {
+.planeta-intro-img {
+  max-width: 200px;
+  height: auto;
+}
+}
+
+
