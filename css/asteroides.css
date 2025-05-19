@@ -1,0 +1,82 @@
+/* GENERALES */
+body {
+  background-color: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+.header-asteroides {
+  background-color: #111;
+  padding: 1.5rem 0;
+}
+
+.logo-header {
+  max-height: 150px;
+}
+
+.volver-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.volver-link:hover {
+  text-decoration: underline;
+}
+
+/* INTRODUCCIÓN */
+.intro-asteroides {
+  background-color: #000;
+}
+
+.intro-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.planeta-intro-img {
+  max-width: 250px;
+  height: auto;
+}
+
+/* SECCIÓN ASTEROIDES */
+.seccion-asteroides {
+  background-color: #0e2039;
+  padding: 3rem 0;
+  color: #fff;
+}
+
+.card-asteroid {
+  background-color: #111;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card-asteroid:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 18px rgba(255, 255, 255, 0.2);
+}
+
+.asteroid-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #a24ecf;
+  margin-bottom: 1rem;
+}
+
+.asteroid-info p {
+  margin-bottom: 0.4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .planeta-intro-img {
+    max-width: 180px;
+  }
+}
