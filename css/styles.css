@@ -87,6 +87,11 @@
   font-family: inherit;
 }
 
+.contact-image {
+  max-width: 250px;
+  height: auto;
+}
+
 .form-contacto label {
   color: white;
   margin-top: 1rem;
@@ -121,7 +126,7 @@
 
 /* HERO BIENVENIDA */
 .hero-bienvenida {
-  background: url('/media/BP.webp') no-repeat center;
+  background: url('../media/BP.webp') no-repeat center;
   background-size: cover;
   min-height: 100vh;
   color: white;
