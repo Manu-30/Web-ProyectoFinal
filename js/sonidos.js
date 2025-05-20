@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
       event.preventDefault();
 
       const destino = boton.getAttribute('href');
-      const sonido = new Audio('sonidos/click-buttons.mp3');
+      const sonido = new Audio('sonidos/click-button.mp3');
 
       sonido.play().then(() => {
         sonido.onended = () => {
